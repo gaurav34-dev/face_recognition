@@ -30,9 +30,8 @@ while True:
         cv2.imshow("My Screen", frame)
         cv2.imshow("My Face", gray)
 
-    key = cv2.waitKey(1)
 
-    if key == ord("q"):
+    if (key := cv2.waitKey(1)) == ord("q"):
         break
     if key == ord("c"):
         # cv2.imwrite(name + ".jpg", frame)

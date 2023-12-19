@@ -22,9 +22,8 @@ while True:
         cv2.imshow("My Screen", frame)
         cv2.imshow("My Face", tri)
 
-    key = cv2.waitKey(1)
 
-    if key == ord("q"):
+    if (key := cv2.waitKey(1)) == ord("q"):
         break
 
 cap.release()
